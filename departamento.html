@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Renta de Departamento</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sala.css">
+</head>
+
+<body>
+    <section class="contenido">
+
+        <h1 id="titulo">El Departamento</h1>
+        
+        <!-- img grande -->
+        <div class="imgs">
+            <a href="#" onclick="document.getElementById('imagen1').style.display='block'">
+            <img src="img/livingroom.jpg" alt="livingroom" class="normal">
+            </a>
+            <p class="avanzar" onclick="avanzar(1)">&gt;</p>
+            <p class="retroceder" onclick="avanzar(-1)">&lt;</p>
+            <p class="esquina-inferior">
+                SALA
+            </p>
+        </div>
+        
+        <div class="imgs">
+            <a href="#" onclick="document.getElementById('imagen2').style.display='block'">
+            <img src="img/diningroom.jpg" alt="diningroom" class="normal">
+            </a>
+                <p class="avanzar" onclick="avanzar(1)">&gt;</p>
+            <p class="retroceder" onclick="avanzar(-1)">&lt;</p>
+            <p class="esquina-inferior">
+                COMEDOR
+            </p>
+        </div>
+        
+ <div class="imgs">
+        <a href="#" onclick="document.getElementById('imagen3').style.display='block'">
+            <img src="img/bedroom.jpg" alt="bedroom" class="normal">
+         </a>
+            <p class="avanzar" onclick="avanzar(1)">&gt;</p>
+            <p class="retroceder" onclick="avanzar(-1)">&lt;</p>
+            <p class="esquina-inferior">
+                RECÁMARA
+            </p>
+        </div>
+        
+        <div class="imgs">
+            <a href="#" onclick="document.getElementById('imagen4').style.display='block'">
+            <img src="img/livingroom2.jpg" alt="livingroom" class="normal">
+            </a>
+            <p class="avanzar" onclick="avanzar(1)">&gt;</p>
+            <p class="retroceder" onclick="avanzar(-1)">&lt;</p>
+            <p class="esquina-inferior">
+                SALA 2
+            </p>
+            
+        </div>
+
+        <!-- img chiquita -->
+        <div class="seccion-mini">
+            <div class="miniaturas">
+                <img src="img/livingroom.jpg" alt="livingroom" class="mini" onclick="mostrar(1)">
+            </div>
+
+            <div class="miniaturas">
+                <img src="img/diningroom.jpg" alt="diningroom" class="mini" onclick="mostrar(2)">
+            </div>
+            
+            <div class="miniaturas">
+                <img src="img/bedroom.jpg" alt="bedroom" class="mini" onclick="mostrar(3)">
+            </div>
+  <div class="miniaturas">
+                <img src="img/livingroom2.jpg" alt="livingroom" class="mini"  onclick="mostrar(4)">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="imagen1" class="modal-ventana">
+        <div class="modal-contenido">
+        <H1>SALA</H1>
+        <img src="img/livingroom.jpg" class="imagen-modal">
+        <button class="boton" onclick="document.getElementById('imagen1').style.display=('none')">Aceptar</button>
+        </div>
+
+    </section>
+       <section id="imagen2" class="modal-ventana">
+        <div class="modal-contenido">
+        <H1>COMEDOR</H1>
+        <img src="img/diningroom.jpg"  class="imagen-modal">
+        <button class="boton" onclick="document.getElementById('imagen2').style.display=('none')">Aceptar</button>
+        </div>
+
+    </section>
+       <section id="imagen3" class="modal-ventana">
+        <div class="modal-contenido">
+        <H1>RECÁMARA</H1>
+        <img src="img/bedroom.jpg"  class="imagen-modal">
+        <button class="boton" onclick="document.getElementById('imagen3').style.display=('none')">Aceptar</button>
+        </div>
+    </section>
+
+       <section id="imagen4" class="modal-ventana">
+        <div class="modal-contenido">
+        <H1>SALA 2</H1>
+        <img src="img/livingroom2.jpg"  class="imagen-modal">
+        <button class="boton" onclick="document.getElementById('imagen4').style.display=('none')">Aceptar</button>
+        </div>
+    </section>
+
+
+
+
+    <script src="sala.js"></script>
+</body>
+</html>
